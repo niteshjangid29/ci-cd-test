@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
       - name: executing remote ssh commands using password
-        uses: appleboy/ssh-action@v1
+        uses: appleboy/ssh-action@v1.2.0
         with:
           host: 54.173.159.248
           username: ubuntu
