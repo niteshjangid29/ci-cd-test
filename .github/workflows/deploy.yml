@@ -22,8 +22,8 @@ jobs:
           key: ${{ secrets.PRIVATE_SSH_KEY }}
           port: 22
           script: |
-            git pull origin main
             cd ci-cd-test
+            git pull origin main
             npm install
             npm run build
             pm2 restart all
